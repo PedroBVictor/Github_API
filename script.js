@@ -5,7 +5,6 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
-getUser("PedroBVictor");
 
 async function getUser(username){
    // Get data users from github
@@ -19,8 +18,6 @@ async function getUser(username){
 async function getRepos(username){
    const resp = await fetch(GITHUB_API + username)
    const respData = await resp.json();
-
-   // min 6:12
 }
 
 function createUserCard(user){
@@ -58,7 +55,6 @@ function createUserCard(user){
          </div>
       </div>
    `
-   fetchRepos = 
    main.innerHTML = cardHTML;
 }
 
